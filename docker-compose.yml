@@ -1,18 +1,18 @@
 version: '3.7'
 services:
   alpine:
-    image: azleal/alpine-template
+    image: azleal/alpine:3.7
     build:
       context: ./
       dockerfile: Dockerfile-alpine
+
   debian:
-    image: azleal/debian-template
+    image: azleal/debian:stretch
     build:
       context: ./
       dockerfile: Dockerfile-debian
   centos:
-    image: azleal/centos-template
+    image: azleal/centos:7
     build:
       context: ./
       dockerfile: Dockerfile-centos
-
